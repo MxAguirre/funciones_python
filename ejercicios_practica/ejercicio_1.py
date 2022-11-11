@@ -11,6 +11,14 @@
 
 def imprimir_mayor(numero_1, numero_2):
     print("Funcion imprimir mayor")
+    if numero_1 > numero_2:
+        print('El primer numero es mayor')
+    elif numero_1 < numero_2:
+        print('El segundo numero es mayor')
+    else:
+        print('Los numeros son iguales')
+    
+
     # En esta función debe determinar cual de los dos
     # números ingresados por parámetro es mayor
     # y luego imprimir dicho valor en pantalla
