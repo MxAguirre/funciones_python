@@ -37,12 +37,21 @@ en la lista pueden usar el método nativo de list "count"
 # Aquí copiar la función "lista_aleatoria"
 # ya elaborada en el ejercicio anterior
 
+def lista_aleatoria(inicio, fin, cantidad):
+    lista = []
+    for i in range(cantidad):
+        numero = random.randint(inicio, fin)
+        lista.append(numero)
+    return lista
 
 # --------------------------------
 
 # --------------------------------
 # Aquí dentro definir la función contar
 
+def contar(lista, numero):
+    veces = lista.count(numero)
+    return veces
 
 # --------------------------------
 
@@ -52,6 +61,10 @@ if __name__ == '__main__':
     # Alumno: Utilizar la función "lista_aleatoria"
     # para que genere una lista de 5 números que esten comprendidos
     # entre los números 1 al 6 inclusive
+    lista = lista_aleatoria(1, 6, 5)
+    print(f'La lista generada es: {lista}')
+    cantidad_tres = contar(lista, 3)
+    print(f'La cantidad de numeros tres en la lista es: {cantidad_tres}')
 
     # lista_numeros = lista_aleatoria(...)
 
